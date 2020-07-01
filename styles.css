@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+}
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+.wave-container {
+  position: relative;
+  background: #3A6BE8;
+  color: #FFF;
+  text-align: center;
+  overflow: hidden;
+}
+h1 {
+  font-size: 4rem;
+}
+h2{
+  font-size: 1.4rem;
+}
+.main-heading{
+  margin: 40px 0 10px 140px;
+  text-align: left;
+}
+.main-para{
+  margin: 0 0 30px 140px;
+  text-align: left;
+  font-weight: normal;
+
+}
+p {
+  font-size: 1rem;
+}
+.bluewave{
+  position: absolute;
+}
+.submitbutton{
+   background:white;
+   border-style:none;
+   border-top-right-radius: 50px;
+   border-bottom-right-radius: 50px;
+   height: 40px;
+   width:100px;
+   background-color: orange;
+   color: white;
+  z-index: 1;
+}
+.wave-container > svg {
+  background: #FFF;
+  position: absolute;
+  shadow:10px;
+}
+
+.company-name{
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 2.5rem;
+}
+
+.navbar-item {
+  padding: 0 28px;
+  text-align: center;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFF;
+}
+.mainimg{
+  width: 70%;
+  margin-right: 40px;
+  z-index: 2;
+  position: relative;
+
+}
+.menu{
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.linkedinlogo{
+  margin-right: 100px;
+  margin-left: 0;
+  padding-left: 0;
+}
+.fblogo{
+  margin-right: 0;
+  padding-right: 10px;
+}
+
+
+/*Second Part*/
+#second-part{
+  margin: 0 20px 50px 140px;
+}
+h3{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 3rem;
+}
+.card-p{
+  text-align: center;
+  margin-top: 10px;
+}
+.card{
+  height: 250px;
+  width: 250px;
+  color: white;
+  text-align: center
+  box-sizing: border-box;
+  border-radius: 50px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease;
+}
+.card1{
+  background-color: #45DF6C
+}
+.card2{
+  background-color: #F9B330
+}
+.card3{
+  background-color: #C53DF6
+}
+.card:hover{
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transform: scale(1.2, 1.2);
+}
+.card::after{
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+ transition: opacity 3s ease-in-out;
+}
