@@ -7,6 +7,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/">
   <link rel="stylesheet" href="styles.css">
   <!-- Bootstrap scripts -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -15,81 +16,103 @@
 </head>
 
 <body>
-  <div class="wave-container">
-    <div class="navbar navbar-expand-lg ">
-      <h1 class=" company-name">Zhiffy</h1>
+  <section id="home-page">
 
-      <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
-        <ul class="navbar-nav ml-auto menu">
-          <li class="navbar-item">
-            <a class="nav-link" href="#features">Home</a>
-          </li>
-          <li class="navbar-item">
-            <a class="nav-link" href="#how-it-works">How it works</a>
-          </li>
-          <li class="navbar-item">
-            <a class="nav-link" href="#contact-us">Contact Us</a>
-          </li>
-        </ul>
+    <div class="wave-container">
+      <div class="navbar navbar-expand-lg navbar-dark">
+        <h1 class=" company-name">Zhiffy</h1>
 
-        <ul class="navbar-nav ml-auto">
-          <li class="navbar-item fblogo">
-            <a class="nav-link" href="facebook.com"><img src="facebook.png" width="20" height="20" title="Facebook Logo"></a>
-          </li>
-          <li class="navbar-item linkedinlogo">
-            <a class="nav-link" href="twitter.com"><img src="linkedin.png" width="20" height="20" title="LinkedIn Logo"></a>
-          </li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
+          <ul class="navbar-nav ml-auto">
+            <li class="navbar-item">
+              <a class="nav-link" href="#features">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a class="nav-link" href="#how-it-works">How it works</a>
+            </li>
+            <li class="navbar-item">
+              <a class="nav-link" href="#contact-us">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="navbar-item fblogo">
+              <a class="nav-link" href="facebook.com"><img src="facebook.png" width="20" height="20" title="Facebook Logo"></a>
+            </li>
+            <li class="navbar-item linkedinlogo">
+              <a class="nav-link" href="twitter.com"><img src="linkedin.png" width="20" height="20" title="LinkedIn Logo"></a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="main-heading">Sell & Get anything else in Exchange</h1>
+          <br />
+          <h2 class="main-para1">Replace unwanted electronics with ANY other ReCommerced item just by paying the difference amount</h2>
+          <p class="main-para2">Launching this June 2020. Sign up below to get notified once we are live</p>
+          <input type="text" class="email" placeholder="Your Email"
+            style="text-align:left; color:grey; float: left; background:white; z-index: 1; border-top-left-radius: 50px;border-bottom-left-radius: 50px; height:40px; width: 300px; border-style:none;" />
+          <button class="submitbutton email">Submit</button>
+        </div>
+        <div class="col-lg-6 laptop">
+          <img class="mainimg hide" src="mainimg.png">
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-6">
-        <h1 class="main-heading">Sell & Get anything else in Exchange</h1>
-        <br />
-        <h2 class="main-para">Replace unwanted electronics with ANY other ReCommerced item just by paying the difference amount</h2>
-        <p class="main-para">Launching this June 2020. Sign up below to get notified once we are live</p>
-        <input type="text" placeholder="Your Email" style="text-align:left; color:grey; background:white; z-index: 1; border-top-left-radius: 50px;border-bottom-left-radius: 50px; height:40px; width: 350px; border-style:none;" />
-        <button class="submitbutton">Submit</button>
-      </div>
-      <div class="col-lg-6">
-        <img class="mainimg" src="mainimg.png">
-      </div>
-    </div>
-  </div>
 
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path class="bluewave" fill="#3A6BE8" fill-opacity="1"
-      d="M0,96L60,122.7C120,149,240,203,360,202.7C480,203,600,149,720,112C840,75,960,53,1080,69.3C1200,85,1320,139,1380,165.3L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">\
-    </path>
-  </svg>
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#3A6BE8" fill-opacity="1"
+        d="M0,96L60,122.7C120,149,240,203,360,202.7C480,203,600,149,720,112C840,75,960,53,1080,69.3C1200,85,1320,139,1380,165.3L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">\
+      </path>
+    </svg>
+  </section>
+
 
   <section id="second-part">
 
     <div class="row">
       <div class="col-lg-4">
-        <div class="card card1">
-          <h3>Sell Quickly</h3>
-          <p class="card-p">Unlike on Quikr or Olx, you can sell it to us without waiting. Zhiffy will buy your electronic right away.</p>
-
-        </div>
-        </div>
-        <div class="col-lg-4">
-        <div class="card card2">
-          <h3>Buy Reliably</h3>
-          <p class="card-p">Any item that you buy on Zhiffy comes with a Warranty and Exchange Policy by default.</p>
-
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front card1">
+              <h3>Sell Quickly</h3>
+            </div>
+            <div class="flip-card-back card1">
+              <p class="card-p">Unlike on Quikr or Olx, you can sell it to us without waiting. Zhiffy will buy your electronic right away.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <dinuv class="col-lg-4">
-        <div class="card card3">
-          <h3>Exchange Easily</h3>
-          <p class="card-p">Easily replace what you don't want with anything you like, in just a couple of clicks. </p>
+      <div class="col-lg-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front card2">
+              <h3>Buy Reliably</h3>
+            </div>
+            <div class="flip-card-back card2">
+              <p class="card-p">Any item that you buy on Zhiffy comes with a Warranty and Exchange Policy by default.</p>
+            </div>
+          </div>
+        </div>
 
+      </div>
+      <div class="col-lg-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front card3">
+              <h3>Exchange Easily</h3>
+            </div>
+            <div class="flip-card-back card3">
+              <p class="card-p">Easily replace what you don't want with anything you like, in just a couple of clicks.</p>
+            </div>
+          </div>
         </div>
       </div>
 

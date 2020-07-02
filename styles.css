@@ -10,11 +10,16 @@ body {
 }
 .wave-container {
   position: relative;
+  padding: 40px 140px 0 140px;
   background: #3A6BE8;
   color: #FFF;
   text-align: center;
-  overflow: hidden;
+  z-index: 9;
 }
+#home-page{
+  position: relative;
+}
+
 h1 {
   font-size: 4rem;
 }
@@ -22,22 +27,32 @@ h2{
   font-size: 1.4rem;
 }
 .main-heading{
-  margin: 40px 0 10px 140px;
+  margin-top: 30px;
+
   text-align: left;
 }
-.main-para{
-  margin: 0 0 30px 140px;
+.main-para1{
+
   text-align: left;
   font-weight: normal;
+
+}
+.main-para2{
+  text-align: left;
+  font-weight: normal;
+  margin-top: 30px;
 
 }
 p {
   font-size: 1rem;
 }
-.bluewave{
-  position: absolute;
+svg{
+  position: relative;
+  z-index: -2;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
 }
 .submitbutton{
+  float: left;
    background:white;
    border-style:none;
    border-top-right-radius: 50px;
@@ -46,19 +61,15 @@ p {
    width:100px;
    background-color: orange;
    color: white;
-  z-index: 1;
+   box-shadow: 0 3px 5px rgba(0,0,0,0.15);
 }
-.wave-container > svg {
-  background: #FFF;
-  position: absolute;
-  shadow:10px;
+
+.email{
+  position: relative;
+  z-index: 2;
 }
 
 .company-name{
-  margin-top: 50px;
-  margin-left: 100px;
-  margin-bottom: 20px;
-  text-align: left;
   font-size: 2.5rem;
 }
 
@@ -73,11 +84,28 @@ p {
   color: #FFF;
 }
 .mainimg{
-  width: 70%;
-  margin-right: 40px;
-  z-index: 2;
-  position: relative;
+  margin: 20px;
+  width: 100%;
+  z-index: 9;
+  position: absolute;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
 
+}
+
+@media all and (max-width: 480px) {
+    .hide {
+      display: none;
+    }
+}
+.laptop{
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+.col-lg-6
+{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .menu{
   float: none;
@@ -87,7 +115,7 @@ p {
   transform: translate(-50%, -50%);
 }
 .linkedinlogo{
-  margin-right: 100px;
+padding-right: 0;
   margin-left: 0;
   padding-left: 0;
 }
@@ -99,27 +127,24 @@ p {
 
 /*Second Part*/
 #second-part{
-  margin: 0 20px 50px 140px;
+  margin: 0 100px 50px 100px;
+  justify-content: center;
+
 }
 h3{
-  margin-top: 10px;
-  text-align: center;
+position: relative;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
   font-size: 3rem;
+
 }
+
 .card-p{
-  text-align: center;
-  margin-top: 10px;
+  font-size: 20px;
 }
-.card{
-  height: 250px;
-  width: 250px;
-  color: white;
-  text-align: center
-  box-sizing: border-box;
-  border-radius: 50px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-  transition: box-shadow 0.3s ease;
-}
+
 .card1{
   background-color: #45DF6C
 }
@@ -129,11 +154,69 @@ h3{
 .card3{
   background-color: #C53DF6
 }
-.card:hover{
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transform: scale(1.2, 1.2);
+.col-lg-4{
+  justify-content: center;
+display: flex;
 }
-.card::after{
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
- transition: opacity 3s ease-in-out;
+.flip-card {
+  margin-bottom: 20px;
+  margin-right: 50px;
+  height: 250px;
+  width: 250px;
+  color: white;
+  justify-content: center;
+  text-align: center
+  box-sizing: border-box;
+  border-radius: 50px;
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  border-radius: 50px;
+
+  color: white;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+/* Style the back side */
+.flip-card-back {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  color: white;
+  vertical-align: middle;
+  border-radius: 50px;
+  transform: rotateY(180deg);
 }
