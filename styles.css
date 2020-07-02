@@ -92,10 +92,8 @@ svg{
 
 }
 
-@media only screen
-  and (min-device-width : 320px)
-  and (max-device-width : 480px)
-  {  .laptop { width: 30%}}
+@media screen and (max-width: 768px)
+  {  .mainimg { display: none;}}
 
 .laptop{
   display: flex;
@@ -187,6 +185,7 @@ display: flex;
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 
+
 }
 
 /* Position the front and back side */
@@ -201,7 +200,7 @@ display: flex;
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   border-radius: 50px;
-
+-webkit-filter: drop-shadow(5px 5px 5px #222);
   color: white;
   display: flex;
   align-items: center;
@@ -219,4 +218,5 @@ display: flex;
   vertical-align: middle;
   border-radius: 50px;
   transform: rotateY(180deg);
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
 }
