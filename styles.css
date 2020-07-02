@@ -92,11 +92,11 @@ svg{
 
 }
 
-@media all and (max-width: 480px) {
-    .hide {
-      display: none;
-    }
-}
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px)
+  {  .laptop { width: 30%}}
+
 .laptop{
   display: flex;
   justify-content: center;
